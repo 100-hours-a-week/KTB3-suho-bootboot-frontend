@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../src/css/base/common.css">
+    <link rel="stylesheet" href="../../src/css/pages/form.css">
+    <link rel="stylesheet" href="../../src/css/pages/signup.css">
+    <title>회원정보 수정</title>
+</head>
+
+<body data-navbar-back="true" data-navbar-profile="true">
+    <div class="centered-content">
+        <div class="container">
+            <h2 class="title">회원정보 수정</h2>
+            <form id="signupForm">
+                <div class="form-group">
+                    <label for="profileImageInput">프로필 사진*</label>
+                    <button type="button" id="uploadButton">
+                        <img id="profilePreview" class="profileImage" alt="프로필 사진">
+                    </button>
+                    <input type="file" id="profileImageInput" accept="image/*" hidden>
+
+                </div>
+
+                <div class="form-group">
+                    <label>이메일</label>
+                    <p class="email-display">example@example.com</p>
+                </div>
+
+                <div class="form-group">
+                    <label for="nicknameField">닉네임*</label>
+                    <input id="nicknameField" type="text" placeholder="닉네임을 입력하세요" required>
+                    <p id="nicknameHelperText" class="helper-text">* 띄어쓰기 불가, 10글자 이내</p>
+                </div>
+
+                <button id="signupButton" type="submit" class="btn btn-primary" disabled>수정하기</button>
+                <p class="text-center mt-20"><a href="#" id="deleteAccountButton" class="link">회원 탈퇴</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- 삭제 확인 모달 -->
+    <div id="deleteModal" class="modal">
+        <div class="modal-content">
+            <h3 id="modalTitle" class="modal-title">회원탈퇴하시겠습니까?</h3>
+            <p class="modal-description">작성된 게시글과 댓글은 삭제 됩니다.</p>
+            <div class="modal-buttons">
+                <button id="modalCancelButton" class="modal-button modal-cancel">취소</button>
+                <button id="modalConfirmButton" class="modal-button modal-confirm">확인</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 토스트 메시지 -->
+    <div id="toast" class="toast"></div>
+
+    <script type="module" src="../../src/js/common/navbar-loader.js"></script>
+    <script type="module" src="../../src/js/pages/profile-edit.js"></script>
+</body>
+
+
+</html>

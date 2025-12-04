@@ -1,0 +1,124 @@
+/* Form Container */
+.form-container {
+    max-width: 700px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e9ecef;
+}
+
+/* Page Header */
+.page-header {
+    text-align: left;
+    margin-bottom: 24px;
+}
+
+.page-header h2 {
+    color: #212529;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 24px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #495057;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #495057;
+    transition: border-color 0.2s;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #E56922;
+}
+
+textarea.form-input {
+    resize: none;
+    min-height: 150px;
+}
+
+/* Image Upload */
+.upload-button {
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #495057;
+    transition: all 0.2s;
+}
+
+.upload-button:hover {
+    border-color: #E56922;
+    color: #E56922;
+    background-color: #fffaf6;
+}
+
+.image-preview {
+    margin-top: 16px;
+}
+
+.postImage {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+}
+
+/* Helper Text */
+.helper-text {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #868e96;
+}
+
+.helper-text.error {
+    color: #e53e3e;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Submit Button */
+.submit-button {
+    width: 100%;
+    padding: 14px;
+    background-color: #E56922;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 16px;
+    transition: background-color 0.2s;
+}
+
+.submit-button:hover {
+    background-color: #d95b0c;
+}
+
+.submit-button:disabled {
+    background-color: #ced4da;
+    cursor: not-allowed;
+}
