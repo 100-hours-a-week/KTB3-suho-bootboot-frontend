@@ -9,7 +9,7 @@ https://github.com/user-attachments/assets/ecc1d80e-27ce-41d9-b32e-6b1e123a0e3f
 ## 개발 인원 및 기간
 - 개발기간 : 2025-11-03 ~ 2025-12-07 (약 1개월) 
 - 개발 인원 : 프론트엔드/백엔드 1명 (개인 프로젝트)
-- 프론트엔드 GitHub: https://github.com/100-hours-a-week/KTB3-suho-bootboot-frontend
+- 백엔드 GitHub: https://github.com/100-hours-a-week/KTB3-suho-bootboot-backend
   
 ## 기술 스택
 ### 🔧 Framework & Language
